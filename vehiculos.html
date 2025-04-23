@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehículos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Mi Taller</div>
+    <ul class="nav-links">
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="vehiculos.html" class="active">Vehículos</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="piezas.html">Piezas</a></li>
+      <li><a href="labores.html">Labores</a></li>
+      <li><a href="problemas.html">Problemas</a></li>
+      <li><a href="hoja-trabajo.html">Hoja de trabajo</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h2>Agregar Vehículo</h2>
+    <form class="formulario tarjeta">
+      <div class="form-group">
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" placeholder="Ej. Toyota" required />
+      </div>
+
+      <div class="form-group">
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" placeholder="Ej. Corolla" required />
+      </div>
+
+      <div class="form-group">
+        <label for="anio">Año</label>
+        <input type="number" id="anio" placeholder="Ej. 2020" required />
+      </div>
+
+      <div class="form-group">
+        <label for="placa">Placa</label>
+        <input type="text" id="placa" placeholder="Ej. ABC-1234" required />
+      </div>
+
+      <div class="form-group">
+        <label for="cliente">Cliente</label>
+        <select id="cliente" required>
+          <option value="">-- Selecciona un cliente --</option>
+          <option value="1">Nashely Pereyra</option>
+          <option value="2">Eliezer Diaz</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-principal">Guardar Vehículo</button>
+      <a href="vehiculos-listado.html" class="btn-principal" style="text-decoration: none; color: white;">Listado Vehiculos</a>
+    </form>
+  </main>
+</body>
+</html>

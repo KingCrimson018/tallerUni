@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoja de Trabajo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Mi Taller</div>
+    <ul class="nav-links">
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="vehiculos.html">Vehículos</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="piezas.html">Piezas</a></li>
+      <li><a href="labores.html">Labores</a></li>
+      <li><a href="problemas.html">Problemas</a></li>
+      <li><a href="hoja-trabajo.html" class="active">Hoja de trabajo</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h2>Hoja de Trabajo</h2>
+    <form class="formulario tarjeta">
+      <div class="form-group">
+        <label for="vehiculo">Seleccionar Vehículo</label>
+        <select id="vehiculo" required>
+          <option value="">Selecciona un vehículo</option>
+          <option value="1">Vehículo 1 (Toyota Corolla)</option>
+          <option value="2">Vehículo 2 (Honda Civic)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="problemas">Seleccionar Problemas</label>
+        <select id="problemas" multiple required>
+          <option value="1">Fuga de aceite</option>
+          <option value="2">Motor ruidoso</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="trabajos">Seleccionar Trabajos</label>
+        <select id="trabajos" multiple required>
+          <option value="1">Cambio de aceite</option>
+          <option value="2">Reemplazo de frenos</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="piezas">Seleccionar Piezas</label>
+        <select id="piezas" multiple required>
+          <option value="1">Aceite Motor</option>
+          <option value="2">Pastillas de freno</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="taller">Seleccionar Taller</label>
+        <select id="taller" required>
+          <option value="">Selecciona un taller</option>
+          <option value="1">Taller 1</option>
+          <option value="2">Taller 2</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-principal">Guardar Hoja de Trabajo</button>
+      <button class="btn-principal" id="crearFactura">Generar Factura</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('crearFactura').addEventListener('click', function() {
+      alert('Factura generada con éxito');
+    });
+  </script>
+</body>
+</html>

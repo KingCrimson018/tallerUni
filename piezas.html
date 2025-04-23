@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piezas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Mi Taller</div>
+    <ul class="nav-links">
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="vehiculos.html">Vehículos</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="piezas.html" class="active">Piezas</a></li>
+      <li><a href="labores.html">Labores</a></li>
+      <li><a href="problemas.html">Problemas</a></li>
+      <li><a href="hoja-trabajo.html">Hoja de trabajo</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h2>Agregar Pieza</h2>
+    <form class="formulario tarjeta">
+      <div class="form-group">
+        <label for="nombre">Nombre de la Pieza</label>
+        <input type="text" id="nombre" placeholder="Ej. Filtro de aceite" required />
+      </div>
+
+      <div class="form-group">
+        <label for="codigo">Código de la Pieza</label>
+        <input type="text" id="codigo" placeholder="Ej. PZ-00123" />
+      </div>
+
+      <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" placeholder="Ej. 1200" min="0" required />
+      </div>
+
+      <div class="form-group">
+        <label for="taller">Taller</label>
+        <select id="taller" required>
+          <option value="">Selecciona un taller</option>
+          <option value="1">Taller 1</option>
+          <option value="2">Taller 2</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-principal">Guardar Pieza</button>
+      <a href="piezas-listado.html" class="btn-principal" style="text-decoration: none; color: white;">Listado Piezas</a>
+    </form>
+  </main>
+</body>
+</html>

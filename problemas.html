@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Problemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Mi Taller</div>
+    <ul class="nav-links">
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="vehiculos.html">Vehículos</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="piezas.html">Piezas</a></li>
+      <li><a href="labores.html">Labores</a></li>
+      <li><a href="problemas.html" class="active">Problemas</a></li>
+      <li><a href="hoja-trabajo.html">Hoja de trabajo</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h2>Agregar Problema</h2>
+    <form class="formulario tarjeta">
+      <div class="form-group">
+        <label for="nombre">Nombre del Problema</label>
+        <input type="text" id="nombre" placeholder="Ej. Fuga de aceite" required />
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" placeholder="Ej. Fuga de aceite del motor que necesita reparación urgente" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="taller">Taller</label>
+        <select id="taller" required>
+          <option value="">Selecciona un taller</option>
+          <option value="1">Taller 1</option>
+          <option value="2">Taller 2</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-principal">Guardar Problema</button>
+      <a href="problemas-listado.html" class="btn-principal" style="text-decoration: none; color: white;">Listado Problemas</a>
+    </form>
+  </main>
+</body>
+</html>

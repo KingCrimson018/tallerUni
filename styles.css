@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #D5EEEB;
+    color: #444;
+  }
+  
+  .navbar {
+    background-color: #00B6D3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .page-content {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #00B6D3;
+  }
+
+  .tarjeta {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.07);
+    padding: 2rem;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input {
+    padding: 0.9rem;
+    border: 1.5px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #00B6D3;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0,182,211,0.3);
+  }
+  
+  .btn-principal {
+    background-color: #00B6D3;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+  
+  .btn-principal:hover {
+    background-color: #00a2be;
+  }
+  .factura-listado {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .tarjeta {
+    background-color: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    margin: 0.5rem 0;
+  }
+  
+  .btn-principal {
+    background-color: #00B6D3;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 50%; 
+    margin-top: auto;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-principal:hover {
+    background-color: #00a2be;
+  }
+  
